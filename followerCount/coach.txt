@@ -1,0 +1,21 @@
+Q1: 
+Why is it "if (count === 10){...}" and not "if (count == 10){...}", 
+or even "if (count = 10){...}"?
+
+A1: 
+"if (count === 10)" uses the strict equality operator (===) 
+which checks if the value of "count" is equal to 10 and also 
+checks if the data types are the same. This means that both the 
+value and the data type of "count" must be equal to 10 for the 
+condition to be true.
+
+"if (count == 10)" uses the loose equality operator (==) which 
+also checks if the value of "count" is equal to 10, but it does 
+not check the data types. This means that if "count" is a string 
+with the value "10", the condition would still be true.
+
+"if (count = 10)" uses the assignment operator (=) which assigns 
+the value 10 to the variable "count". This is not a comparison, 
+but rather a statement that assigns a value. So, the condition 
+would always be true because the assignment operation returns the 
+assigned value.
