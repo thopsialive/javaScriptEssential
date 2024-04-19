@@ -1,0 +1,25 @@
+Q1:
+What is the difference between "submitButton.onclick = submitFeedback;"
+and "submitButton.onclick = submitFeedback();"? Note second one 
+starts the submitFeedback function before any data is collected, 
+so before the button is even pushed.
+
+A1:
+"submitButton.onclick = submitFeedback;" assigns the function 
+reference of "submitFeedback" to the onclick event handler of the 
+submitButton. This means that when the button is clicked, the 
+"submitFeedback" function will be executed.
+
+"submitButton.onclick = submitFeedback();" assigns the result of 
+the "submitFeedback" function to the onclick event handler of the 
+submitButton. This means that when this line of code is executed, 
+the "submitFeedback" function will be immediately invoked and its 
+return value will be assigned to the onclick event handler. This 
+is not desirable in most cases because it executes the function 
+immediately, even before the button is clicked.
+
+In general, when assigning a function to an event handler, you 
+want to use the first syntax without parentheses 
+("submitButton.onclick = submitFeedback;"). This way, the function 
+will be executed only when the event (in this case, the button 
+click) occurs.
