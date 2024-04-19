@@ -1,0 +1,20 @@
+Q1.1:
+length = parseFloat(document.getElementById("length").value) 
+Why do i need .value
+
+A1.1:
+the .value property is used to retrieve the value entered 
+by the user in an input field. It is specifically used with 
+HTML input elements like text fields, dropdowns, checkboxes, 
+etc. For example, if you have an input field with the id "length", 
+document.getElementById("length").value would give you the value 
+entered by the user in that field.
+
+Q1.2:
+if the value is get from "document.getElementById("length").value" 
+was already a float, parseFloat() would essentially do nothing? 
+it would only make a difference if the number i got from 
+"document.getElementById("length").value" was an integer?
+
+A1.2:
+Yes.
