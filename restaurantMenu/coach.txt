@@ -1,3 +1,16 @@
 Q1:
 What is map() and forEach()? How do these work for array 
 iteration?
+
+A1:
+map(item, index, array)
+The provided code converts breakfast menu array items into HTML 
+strings using map() and an arrow function to structure each item's 
+HTML format.
+
+forEach(item, index, array)
+The forEach method loops through each element in the 
+mainCourseMenu array. For each item in the array, the arrow 
+function (item, index) => {…} is executed. Inside the arrow 
+function, an HTML string is composed for each menu item, 
+incorporating the item's content and its corresponding index.
