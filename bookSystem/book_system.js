@@ -1,10 +1,6 @@
 // Step 2: Defining variables and functions
 let books = [];
 
-function clearInputs(){
-    
-}
-
 function addBook() {
     const bookName = document.getElementById('bookName').value;
     const authorName = document.getElementById('authorName').value;
@@ -53,3 +49,9 @@ a specific book. These buttons are configured to call the
 editbook() and deletebook() functions respectively, passing the 
 index of the book as a parameter.
 */
+
+// Practice Task
+function deleteBook(index) {
+    books.splice(index, 1) //splice(start:number, deleteCount?:number)
+    showbooks()
+}
