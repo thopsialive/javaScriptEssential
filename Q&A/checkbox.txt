@@ -1,0 +1,15 @@
+Q1:
+li.innerHTML = 
+    `<input type="checkbox" id="task-${index}" 
+    ${task.completed ? "checked" : ""}>`;
+
+Can you explain what the "${task.completed? "checked":""}" 
+part means?
+
+A1:
+Here's how it works:
+
+*If task.completed is true, the expression evaluates to "checked", 
+which means the checkbox will be checked.
+*If task.completed is false, the expression evaluates to an empty 
+string, which means the checkbox will not be checked.
