@@ -1,0 +1,19 @@
+Q1:
+for 
+
+" const colors = ['red', 'blue', 'green', 'purple', 'orange',
+ 'pink', 'red', 'blue', 'green', 'purple', 'orange', 'pink']; 
+ let cards = shuffle(colors.concat(colors));" 
+
+what is the purpuse of the word 'colors' inside the concat 
+function?
+
+
+A1:
+The purpose of the word 'colors' inside the concat function is to
+ concatenate the colors array with itself. By using 
+ colors.concat(colors), you are essentially creating a new array 
+ that contains two copies of the colors array. 
+ 
+ This is useful in scenarios where you need to duplicate the 
+ elements of an array.
